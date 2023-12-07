@@ -7,31 +7,30 @@
 }
 
 body{
+    background-image: url(assets/socials.webp);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(./assets/socials.webp);
-    image-rendering: auto;
     font-size: 50px;
+    margin-top: 30px;
+
 }
 
-img{
-    position:relative;
-    width: 300px;
-    height: 300px;
+.img img{
+    height: 400px;
+    width: 400px;
     display: flex;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border-radius: 40%;
-    -webkit-border-radius: 40%;
-    -moz-border-radius: 40%;
-    -ms-border-radius: 40%;
-    -o-border-radius: 40%;
+    justify-content: center;
+    border-radius: 50%;
 }
 
 h1 {
     text-align: center;
-    color: red;
     font-size: 30px;
 }
 
@@ -39,14 +38,12 @@ h1::before{
     content: attr(data-text);
     position: absolute;
     color: brown;
-    width: 150px;
     overflow: hidden;
     white-space: nowrap;
     border-right: 4px solid #fff;
     animation: animate 6s linear infinite;
-    filter: drop-shadow(0 0 350px red);
-    -webkit-animation: animate 6s linear infinite;
-    -webkit-filter: drop-shadow(0 0 350px red);
+    filter: drop-shadow(0 0 500px red);
+    -webkit-filter: drop-shadow(0 0 500px red);
 }
 
 @keyframes animate{
@@ -55,9 +52,8 @@ h1::before{
         width: 0;
     }
     100%{
-        width: 270;
+        width: 360;
     }
-    
 }
 
 p{
@@ -69,17 +65,19 @@ p{
 a{
     color: rgb(78, 78, 18);
     margin-bottom: 20px;
-    width: 100%;
-    max-width: 600px;
-
+    width: 500px;
+    padding: 20px;
     text-align: center;
     text-decoration: none;
     font-size: 18px;
-
     border: 3px solid black;
     box-shadow: 8px 8px 0px black;
     transition: 0.2s all;
-
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 
@@ -100,16 +98,11 @@ a:hover{
 .green{
     background: green;
 }
-.red{
+.darkred{
     background: red;
 }
-.lightgreen{
+.oraneyellow{
     background: lightskyblue;
 }
-.deepred{
-    background: darkred;
-}
-.oraneyellow{
-    background: orangered;
-}
+
 
