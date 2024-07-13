@@ -1,77 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
 
 
-*{
-    margin: 0;
-    padding: 0;
+body{
+    padding: 5%;
+    background: rgb(174,179,238);
+    background: radial-gradient(circle, rgba(174,179,238,1) 0%, rgba(29,41,28,1) 100%);
 }
 
-body{
-    background-image: url(assets/socials.webp);
-    background-attachment: fixed;
-    background-position: center;
-}
 
 .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 50px;
-    margin-top: 30px;
-
+    margin: auto;
+    width: 50%;
+    padding: auto;
 }
 
-.img img{
-    height: 400px;
-    width: 400px;
-    display: flex;
-    justify-content: center;
+.container h2{
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+    color: white;
+}
+
+
+.container img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     border-radius: 50%;
 }
 
-h1 {
-    text-align: center;
-    font-size: 30px;
-}
-
-h1::before{
-    content: attr(data-text);
-    position: absolute;
-    color: brown;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 4px solid #fff;
-    animation: animate 6s linear infinite;
-    filter: drop-shadow(0 0 500px red);
-    -webkit-filter: drop-shadow(0 0 500px red);
-}
-
-@keyframes animate{
-    0%
-    {
-        width: 0;
-    }
-    100%{
-        width: 360;
-    }
-}
-
-p{
-    font-size: 16px;
-    margin-bottom: 20px;
-    text-align: center;
-}
 
 a{
-    color: rgb(78, 78, 18);
+    color: white;
     margin-bottom: 20px;
-    width: 500px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     font-size: 18px;
-    border: 3px solid black;
-    box-shadow: 8px 8px 0px black;
+    border: 2px solid black;
+    box-shadow: 2.5px 3px 10px 0.5px black;
     transition: 0.2s all;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -92,17 +60,29 @@ a:hover{
     transform: translate(8px,8px);
 }
 
-.purple{
-    background: purple;
-}
-.green{
-    background: green;
-}
-.darkred{
-    background: red;
-}
-.oraneyellow{
-    background: lightskyblue;
+.social-color{
+    background: rgb(114,119,173);
+    background: radial-gradient(circle, rgba(114,119,173,1) 100%, rgba(174,179,238,1) 100%, rgba(29,41,28,1) 100%); 
 }
 
 
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:  rgb(114,119,173)   ;
+    border-radius: 10px;
+}
