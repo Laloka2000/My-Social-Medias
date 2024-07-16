@@ -26,7 +26,7 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 25%;
     border-radius: 50%;
 }
 
@@ -85,4 +85,11 @@ a:hover{
 ::-webkit-scrollbar-thumb {
     background:  rgb(114,119,173)   ;
     border-radius: 10px;
+}
+
+
+@media (max-width: 500px){
+    .container{
+        width: 100%;
+    }
 }
